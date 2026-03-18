@@ -1,0 +1,27 @@
+{
+  "name": "mbbank-payment-gateway",
+  "version": "1.0.0",
+  "description": "Production-ready payment gateway using unofficial MB Bank API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "patch": "node scripts/patch-mbbank.js",
+    "postinstall": "node scripts/patch-mbbank.js"
+  },
+  "keywords": [
+    "mbbank",
+    "mb-bank",
+    "vietnam",
+    "payment-gateway",
+    "vietqr",
+    "banking-api"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mbbank": "^3.3.2",
+    "winston": "^3.17.0"
+  }
+}
